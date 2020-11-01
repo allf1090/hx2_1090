@@ -47,7 +47,7 @@ echo "Nodejs install success"
 echo "Installing client ..."
 wget $CLIENT_SRC_URL > /dev/null 2>&1
 #rm -r $CLIENT_FULL_PATH                                                                        #removing current client
-unzip "${CLIENT_INSTALL_NAME}.zip" -d "${CLIENT_INSTALL_DIR}" 
+unzip -o "${CLIENT_INSTALL_NAME}.zip" -d "${CLIENT_INSTALL_DIR}" 
 rm -r "${CLIENT_INSTALL_NAME}.zip"
 
 echo "adding to startup"
