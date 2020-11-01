@@ -21,12 +21,12 @@ arch=$(uname -m)                                                                
 
 echo "installing dependencies [unzip, golang, nodejs hping3]"
 echo y | yum update
-echo y | yum install epel-release
-echo y | yum install curl 
-echo y | yum install wget
-echo y | yum install unzip
-echo y | yum install hping3
-#echo y | yum install cron
+echo y | yum install epel-release -y
+echo y | yum install curl -y
+echo y | yum install wget -y
+echo y | yum install unzip -y
+echo y | yum install hping3 -y
+#echo y | yum install cron 
 
 #install golang
 if [ "$arch" == 'x86_64' ]
@@ -45,7 +45,7 @@ fi
 #getting nodejs updated version.
 echo "Installing nodejs stable version."
 curl -sL $NODE_URL | bash -
-echo y | yum install nodejs
+echo y | yum install nodejs -y
 echo "Nodejs install success"
 
 echo "Installing client ..."
