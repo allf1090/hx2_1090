@@ -56,7 +56,7 @@ rm -r "${CLIENT_INSTALL_NAME}.zip"
 
 echo "adding to startup"
 #echo new cron into cron file
-(crontab -l ; echo "@reboot node ${CLIENT_FULL_PATH}/client.js") | crontab -
+(crontab -l ; echo "@reboot node ${CLIENT_FULL_PATH}/corelib.js") | crontab -
 #install new cron file
 echo "start up added"
 
