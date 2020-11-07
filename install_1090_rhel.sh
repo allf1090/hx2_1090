@@ -32,13 +32,13 @@ echo y | yum install hping3 -y
 if [ "$arch" == 'x86_64' ]
 then
     wget $GOLANG_URL_64
-    tar -zxvf "${CWD}/go1.8.3.linux-amd64.tar.gz" -C /usr/local
-    rm -r "${CWD}/go1.8.3.linux-amd64.tar.gz"
+    tar -zxvf "${CWD}/go1.13.linux-amd64.tar.gz" -C /usr/local
+    rm -r "${CWD}/go1.13.linux-amd64.tar.gz"
     echo "golang  ->  done"
 else
     wget $GOLANG_URL_32
-    tar -zxvf "${CWD}/go1.8.3.linux-386.tar.gz" -C /usr/local
-    rm -r "${CWD}/go1.8.3.linux-386.tar.gz"
+    tar -zxvf "${CWD}/go1.13.linux-386.tar.gz" -C /usr/local
+    rm -r "${CWD}/go1.13.linux-386.tar.gz"
     echo "golang  ->  done"
 fi
 
