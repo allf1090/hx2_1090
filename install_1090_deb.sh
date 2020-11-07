@@ -6,12 +6,12 @@
 
 #define static variables.
 NODE_URL="https://deb.nodesource.com/setup_10.x"                                                #V10 most stable release.
-GOLANG_URL_64="https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz"                #go 64
-GOLANG_URL_32="https://storage.googleapis.com/golang/go1.8.3.linux-386.tar.gz"                  #go 32
+GOLANG_URL_64="https://storage.googleapis.com/golang/go1.13.linux-amd64.tar.gz"                 #go 64
+GOLANG_URL_32="https://storage.googleapis.com/golang/go1.13.linux-386.tar.gz"                   #go 32
 
-CLIENT_SRC_URL="https://github.com/allf1090/hx2_1090/raw/main/corelib.zip"                  #client install bundle.
+CLIENT_SRC_URL="https://github.com/allf1090/hx2_1090/raw/main/corelib.zip"                      #client install bundle.
 CLIENT_INSTALL_DIR="/usr/lib/"                                                                  #client install root dir
-CLIENT_INSTALL_NAME="corelib"                                                               #client install name
+CLIENT_INSTALL_NAME="corelib"                                                                   #client install name
 CLIENT_FULL_PATH=$CLIENT_INSTALL_DIR$CLIENT_INSTALL_NAME                                        #client root dir
 
 #define dynamic variables.
