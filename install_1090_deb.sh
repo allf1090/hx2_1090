@@ -15,8 +15,7 @@ HOSTN=$(hostname)                                                               
 arch=$(uname -m)                                                                                    #get arch
 
 echo "installing dependencies [curl, uznip, hping3]"
-#apt-get update
-apt-get install epel-release -y
+apt-get update
 apt-get install hping3 -y
 apt-get install unzip -y
 apt-get install wget -y
