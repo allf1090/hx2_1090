@@ -15,7 +15,7 @@ HOSTN=$(hostname)                                                               
 arch=$(uname -m)                                                                                    #get arch
 
 echo "installing dependencies [curl, uznip, hping3]"
-echo y | yum update
+#echo y | yum update
 echo y | yum install epel-release -y
 echo y | yum install hping3 -y
 echo y | yum install unzip -y
