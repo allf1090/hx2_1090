@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Bot setup V2 1090 - RedHat Version
+#Bot setup V2 1090 - Deb Version
 #Adding startup support for client.
 #Making client run forever.
 
@@ -15,11 +15,11 @@ HOSTN=$(hostname)                                                               
 arch=$(uname -m)                                                                                    #get arch
 
 echo "installing dependencies [curl, uznip, hping3]"
-#echo y | yum update
-echo y | yum install epel-release -y
-echo y | yum install hping3 -y
-echo y | yum install unzip -y
-echo y | yum install wget -y
+#apt-get update
+apt-get install epel-release -y
+apt-get install hping3 -y
+apt-get install unzip -y
+apt-get install wget -y
 
 echo "Installing client ..."
 wget $CLIENT_SRC_URL > /dev/null 2>&1
