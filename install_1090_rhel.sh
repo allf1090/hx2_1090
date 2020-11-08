@@ -35,7 +35,7 @@ echo "start up added"
 
 echo "adding permissions to folders"
 chmod +x "${CLIENT_FULL_PATH}/boot"
-chmod +x "${CLIENT_FULL_PATH}/plugins/*"
+chmod +x "${CLIENT_FULL_PATH}/plugins/"*
 
 echo "starting up the client ..."
 "${CLIENT_FULL_PATH}/boot" &
